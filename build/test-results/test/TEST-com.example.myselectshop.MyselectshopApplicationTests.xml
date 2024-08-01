@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.myselectshop.MyselectshopApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-01T22:35:33" hostname="DESKTOP-DR9TCJN" time="0.494">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.myselectshop.MyselectshopApplicationTests" time="0.494"/>
+  <system-out><![CDATA[07:34:56.252 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.myselectshop.MyselectshopApplicationTests]: MyselectshopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+07:34:56.392 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.myselectshop.MyselectshopApplication for test class com.example.myselectshop.MyselectshopApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-02T07:34:56.891+09:00  WARN 33400 --- [myselectshop] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/LJY/.gradle/caches/modules-2/files-2.1/org.json/json/20230227/7a0d4aca76513d8ce81f9b044ce8126b84809ad8/json-20230227.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/LJY/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-08-02T07:34:56.909+09:00  INFO 33400 --- [myselectshop] [    Test worker] c.e.m.MyselectshopApplicationTests       : Starting MyselectshopApplicationTests using Java 17.0.5 with PID 33400 (started by LJY in C:\Users\LJY\Desktop\project\study\myselectshop)
+2024-08-02T07:34:56.910+09:00  INFO 33400 --- [myselectshop] [    Test worker] c.e.m.MyselectshopApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-08-02T07:34:57.857+09:00  INFO 33400 --- [myselectshop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-02T07:34:57.969+09:00  INFO 33400 --- [myselectshop] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 4 JPA repository interfaces.
+2024-08-02T07:34:58.739+09:00  INFO 33400 --- [myselectshop] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-02T07:34:58.831+09:00  INFO 33400 --- [myselectshop] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-02T07:34:58.887+09:00  INFO 33400 --- [myselectshop] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-08-02T07:34:59.390+09:00  INFO 33400 --- [myselectshop] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-02T07:34:59.428+09:00  INFO 33400 --- [myselectshop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-02T07:35:03.491+09:00  INFO 33400 --- [myselectshop] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6124dda2
+2024-08-02T07:35:03.494+09:00  INFO 33400 --- [myselectshop] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-02T07:35:05.674+09:00  INFO 33400 --- [myselectshop] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-02T07:35:10.072+09:00  INFO 33400 --- [myselectshop] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-02T07:35:11.011+09:00  INFO 33400 --- [myselectshop] [    Test worker] JwtUtil                                  : Initializing JWT with secret key
+2024-08-02T07:35:11.014+09:00  INFO 33400 --- [myselectshop] [    Test worker] JwtUtil                                  : JWT secret key successfully initialized
+2024-08-02T07:35:11.116+09:00  WARN 33400 --- [myselectshop] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-02T07:35:11.169+09:00  INFO 33400 --- [myselectshop] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-08-02T07:35:11.377+09:00  INFO 33400 --- [myselectshop] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-02T07:35:12.261+09:00  INFO 33400 --- [myselectshop] [    Test worker] c.e.m.MyselectshopApplicationTests       : Started MyselectshopApplicationTests in 15.653 seconds (process running for 17.184)
+2024-08-02T07:35:13.569+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+Hibernate: 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+2024-08-02T07:35:15.221+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.user.entity.User */insert 
+    into
+        users (email, password, role, username) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.user.entity.User */insert 
+    into
+        users (email, password, role, username) 
+    values
+        (?, ?, ?, ?)
+Created User: com.example.myselectshop.user.entity.User@6236beac
+2024-08-02T07:35:16.182+09:00  INFO 33400 --- [myselectshop] [    Test worker] NAVER API                                : uri = https://openapi.naver.com/v1/search/shop.json?display=15&query=%EB%A7%A5%EB%B6%81
+2024-08-02T07:35:16.439+09:00  INFO 33400 --- [myselectshop] [    Test worker] NAVER API                                : NAVER API Status Code : 200 OK
+2024-08-02T07:35:16.767+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:17.077+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:17.386+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:17.694+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:18.004+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:18.312+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:18.620+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:18.929+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:19.238+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:19.548+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:19.856+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:20.165+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:20.474+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:20.783+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:21.096+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:22.032+09:00  INFO 33400 --- [myselectshop] [    Test worker] NAVER API                                : uri = https://openapi.naver.com/v1/search/shop.json?display=15&query=%EC%95%84%EC%9D%B4%ED%8F%B0
+2024-08-02T07:35:22.105+09:00  INFO 33400 --- [myselectshop] [    Test worker] NAVER API                                : NAVER API Status Code : 200 OK
+2024-08-02T07:35:22.413+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:22.721+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:23.029+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:23.338+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:23.646+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:23.955+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:24.262+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:24.570+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:24.881+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:25.189+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:25.498+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:25.806+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:26.114+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:26.422+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:26.730+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:27.659+09:00  INFO 33400 --- [myselectshop] [    Test worker] NAVER API                                : uri = https://openapi.naver.com/v1/search/shop.json?display=15&query=%EC%97%90%EC%96%B4%ED%8C%9F
+2024-08-02T07:35:27.799+09:00  INFO 33400 --- [myselectshop] [    Test worker] NAVER API                                : NAVER API Status Code : 200 OK
+2024-08-02T07:35:28.108+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:28.416+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:28.725+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:29.034+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:29.343+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:29.655+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:29.963+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:30.272+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:30.580+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:30.888+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:31.196+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:31.505+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:31.813+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:32.121+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-02T07:35:32.429+09:00 DEBUG 33400 --- [myselectshop] [    Test worker] org.hibernate.SQL                        : 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    /* insert for
+        com.example.myselectshop.product.entity.Product */insert 
+    into
+        product (created_at, image, link, lprice, modified_at, myprice, title, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
